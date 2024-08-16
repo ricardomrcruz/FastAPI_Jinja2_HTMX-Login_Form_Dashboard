@@ -1,6 +1,6 @@
 
 
-![FastAPI-Jinja2-HTMX-Server-Architecture](https://github.com/user-attachments/assets/153b6796-e4b0-46b1-a9e2-edcadd8fafc7)
+![FastAPI-Jinja2-HTMX-Server-Architecture](https://github.com/user-attachments/assets/72f26fc0-7d0e-4f64-8f8d-ef35ad5f08fa)
 
 
 # FastAPI Jinja2 Tenplates HTMX - Login Form & SAAS Dashboard
