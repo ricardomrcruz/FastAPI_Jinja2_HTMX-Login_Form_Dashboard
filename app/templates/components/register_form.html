@@ -1,0 +1,116 @@
+<div
+  class="relative mt-28 p-8 max-w-md mx-auto bg-black bg-opacity-70 border border-sky-950 rounded-md"
+  hx-target="this"
+  hx-swap="outerHTML"
+>
+  <div class="max-w-md mx-auto">
+    <img
+      src="../static/img/logo.png"
+      class="w-16 h-16 mx-auto mb-1"
+      alt="logo"
+    />
+    <div class="text-neutral-300 m-auto text-center text-xl">
+      <h1 class="">Mark3ts</h1>
+      <h2 class="text-sm">Find the Best Deals Across the Web.</h2>
+    </div>
+  </div>
+
+  <!-- register form -->
+  <form
+    hx-post="/register/"
+    hx-target="#error-container"
+    hx-target-error="#error-container"
+    hx-swap="innerHTML"
+    class="mt-5 max-w-sm mx-auto"
+  >
+    <h1 class="text-white text-2xl">Register</h1>
+    <div class="mt-4">
+      <label
+        for="username"
+        class="block mb-2 text-sm font-medium text-gray-900 dark:text-white"
+        >Username</label
+      >
+      <input
+        type="text"
+        id="username"
+        name="username"
+        class="bg-gray-800 text-white text-sm rounded-md block w-full p-2.5 placeholder-gray-600 focus:outline-none focus:ring-2 focus:ring-gray-900"
+        required
+      />
+      <span
+        class="helper-text"
+        data-error="Please enter a valid username."
+        data-sucess=""
+      >
+      </span>
+    </div>
+    <div class="mb-2 mt-1">
+      <label
+        for="email"
+        class="block mb-2 text-sm font-medium text-gray-900 dark:text-white"
+        >Email</label
+      >
+      <input
+        type="email"
+        id="email"
+        name="email"
+        class="bg-gray-800 text-white text-sm rounded-md block w-full p-2.5 placeholder-gray-600 focus:outline-none focus:ring-2 focus:ring-gray-900"
+        placeholder="example@mark3ts.com"
+        required
+      />
+      <span
+        class="helper-text"
+        data-error="Please enter a valid email."
+        data-sucess=""
+      >
+      </span>
+    </div>
+    <div class="mb-1">
+      <label
+        for="password"
+        class="block mb-2 text-sm font-medium text-gray-900 dark:text-white"
+        >Password</label
+      >
+      <input
+        type="password"
+        id="password"
+        name="password"
+        class="bg-gray-800 text-white text-sm rounded-md block w-full p-2.5 placeholder-gray-600 focus:outline-none focus:ring-2 focus:ring-gray-900"
+        required
+      />
+    </div>
+    <div class="mb-4">
+      <label
+        for="verify_password"
+        class="block mb-2 text-xs font-medium text-gray-900 dark:text-white"
+        >verify password</label
+      >
+      <input
+        type="password"
+        id="verify_password"
+        name="verify_password"
+        class="bg-gray-800 text-white text-sm rounded-md block w-full p-2.5 placeholder-gray-600 focus:outline-none focus:ring-2 focus:ring-gray-900"
+        required
+      />
+    </div>
+
+    <div id="error-container" class="text-red-800"></div>
+    <button
+      type="submit"
+      class="mt-4 text-white bg-blue-700 hover:bg-blue-800 focus:ring-4 focus:outline-none focus:ring-blue-300 font-medium rounded-md text-sm w-full px-5 py-2.5 text-center dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800"
+    >
+      Submit
+    </button>
+  </form>
+
+  <div class="flex items-start mb-5 m-auto max-w-sm mx-auto mt-9">
+    <span for="remember" class="font-normal text-gray-100"
+      >Already have an account? </span
+    ><button
+      hx-get=""
+      class="ml-3 hover:underline text-blue-500 font-extrabold"
+    >
+      Sign In
+    </button>
+  </div>
+</div>

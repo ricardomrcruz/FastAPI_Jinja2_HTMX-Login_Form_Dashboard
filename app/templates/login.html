@@ -1,0 +1,95 @@
+{% extends "./layout/base_dash.html" %} {% block title %}Mark3ts{% endblock %}
+{% block content %}
+<!-- background -->
+<div
+  class="absolute z-2 top-0 h-screen w-screen bg-black bg-[radial-gradient(#ffffff33_1px,#000000_1px)] bg-[size:20px_20px]"
+></div>
+
+<div
+  class="relative mt-44 p-8 max-w-md mx-auto bg-black bg-opacity-70 border border-sky-950 rounded-md"
+  hx-target="this"
+  hx-swap="outerHTML"
+>
+  <div class="max-w-md mx-auto">
+    <a href="/">
+      <img
+        src="../static/img/logo.png"
+        class="w-16 h-16 mx-auto mb-1"
+        alt="logo"
+      />
+      <div class="text-neutral-300 m-auto text-center text-xl">
+        <h1 class="">Mark3ts</h1>
+        <h2 class="text-sm">Find the Best Deals Across the Web.</h2>
+      </div></a
+    >
+  </div>
+
+  <!-- login form -->
+  <form
+    hx-post="/login/"
+    hx-target="#error-container"
+    hx-target-error="#error-container"
+    hx-swap="innerHTML"
+    method="post"
+    class="mt-5 max-w-sm mx-auto"
+  >
+    <h1 class="text-white text-2xl">Sign In</h1>
+    <div class="mt-4 mb-2">
+      <label
+        for="email"
+        class="block mb-2 text-sm font-medium text-gray-900 dark:text-white"
+        >Your email</label
+      >
+      <input
+        type="email"
+        id="email"
+        name="email"
+        class="bg-gray-800 text-white text-sm rounded-md block w-full p-2.5 placeholder-gray-600 focus:outline-none focus:ring-2 focus:ring-gray-900"
+        placeholder="name@flowbite.com"
+        required
+      />
+      <span
+        class="helper-text"
+        data-error="Please enter a valid email."
+        data-sucess=""
+      >
+      </span>
+    </div>
+    <div class="mb-4">
+      <label
+        for="password"
+        class="block mb-2 text-sm font-medium text-gray-900 dark:text-white"
+        >Your password</label
+      >
+      <input
+        type="password"
+        id="password"
+        name="password"
+        class="bg-gray-800 text-white text-sm rounded-md block w-full p-2.5 placeholder-gray-600 focus:outline-none focus:ring-2 focus:ring-gray-900"
+        required
+      />
+    </div>
+    <div id="error-container" class="text-red-800"></div>
+
+    <button
+      type="submit"
+      name="action"
+      class="mt-4 text-white bg-blue-700 hover:bg-blue-800 focus:ring-2 focus:outline-none focus:ring-blue-300 font-medium rounded-md text-sm w-full px-5 py-2.5 text-center dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800"
+    >
+      Submit
+    </button>
+  </form>
+
+  <div class="flex items-start mb-5 m-auto max-w-sm mx-auto mt-9">
+    <span for="remember" class="font-normal text-gray-100"
+      >First time using Mark3ts®? </span
+    ><button
+      class="ml-3 hover:underline text-blue-500 font-extrabold"
+      hx-get="/register_form"
+    >
+      Create An Account
+    </button>
+  </div>
+</div>
+
+{% endblock %}

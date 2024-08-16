@@ -1,0 +1,40 @@
+{% for item in data %}
+<div
+  class="w-[13rem] hover:w-[13.2rem] max-w-sm bg-black border border-gray-800 rounded-md shadow cursor-pointer my-3 overflow-hidden"
+>
+  <a href="" class="flex flex-col h-full">
+    <div class="m-2 flex flex-col h-full">
+      <div class="aspect-square w-full overflow-hidden bg-white rounded-sm">
+        <img
+          class="w-full h-full object-contain"
+          src="{{ item.img }}"
+          alt="{{ item.title }}"
+        />
+      </div>
+
+      <div class="px-4 flex flex-col flex-grow">
+        <h5
+          class="text-md tracking-tight text-neutral-200 hover:underline line-clamp-4 mt-2 flex-grow"
+        >
+          {{item.title}}
+        </h5>
+
+        <div class="mt-auto">
+          <div class="flex items-center mt-2.5 mb-2 justify-between">
+            <span class="text-amber-500">New</span>
+            <span
+              class="bg-gray-700 text-gray-400 text-xs font-semibold px-2.5 py-0.5 rounded ms-3"
+              >amazon</span
+            >
+          </div>
+          <div class="flex items-center justify-between mb-2">
+            <span class="text-2xl font-bold text-neutral-100"
+              >€ {{item.price}}</span
+            >
+          </div>
+        </div>
+      </div>
+    </div>
+  </a>
+</div>
+{% endfor %}

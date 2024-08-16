@@ -1,0 +1,19 @@
+<!-- home button top navbar -->
+<button
+  id="home_btn"
+  hx-get="/main_dashboard"
+  hx-target="#main_section"
+  hx-trigger="click"
+  hx-swap="innerHTML transition:true"
+  hx-select="#main_homepage"
+  hx-select-oob="#home_btn, #search_btn"
+  class="underline underline-offset-4 cursor-pointer"
+>
+  Home
+</button>
+
+<!-- search nav top linkn -->
+{% include 'partials/search_btn.html'%}
+
+<!-- main section homepage -->
+{% include 'components/dashboard.html'%}

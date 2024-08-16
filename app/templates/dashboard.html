@@ -1,0 +1,75 @@
+{% extends "./layout/base_dash.html" %} {% block title %}Mark3ts{% endblock %}
+{% block content %}
+<div
+  class="absolute z-[-10] top-0 h-screen w-screen bg-black bg-[radial-gradient(#ffffff33_1px,#000000_1px)] bg-[size:20px_20px] animate-slow-pulse"
+></div>
+
+<div class="flex w-full h-screen m-auto justify-center">
+  <div id="toptoggle"></div>
+  <!-- sidebar -->
+  {% include 'components/sidenav2.html' %}
+  <!-- main part of the screen -->
+  <div class="w-[100%] overflow-y-auto no-scrollbar">
+    <div
+      class="h-[8%] bg-black bg-opacity-80 text-white border-b-gray-700 border-b flex items-center justify-between"
+    >
+      <div><span class="ml-10 h-auto text-2xl">Mark3ts </span></div>
+      <div class="space-x-6 ml-10 justify-center">
+        <button
+          id="home_btn"
+          hx-get="/main_dashboard"
+          hx-target="#main_section"
+          hx-trigger="click"
+          hx-swap="innerHTML transition:true"
+          hx-select-oob="#home_btn"
+          class="underline underline-offset-4"
+        >
+          Home
+        </button>
+        <button
+          id="search_btn"
+          hx-get="/main_search"
+          hx-trigger="click"
+          hx-target="#main_section"
+          hx-swap="innerHTML transition:true"
+          hx-select-oob="#search_btn, #home_btn"
+        >
+          Search
+        </button>
+        <span>Watchlist</span>
+        <span>Developers</span>
+      </div>
+
+      <div class="flex space-x-5 mr-11">
+        <button>
+          <svg
+            class="w-6 h-6 text-white hover:text-blue-500"
+            aria-hidden="true"
+            xmlns="http://www.w3.org/2000/svg"
+            width="24"
+            height="24"
+            fill="none"
+            viewBox="0 0 24 24"
+          >
+            <path
+              stroke="currentColor"
+              stroke-linecap="round"
+              stroke-linejoin="round"
+              stroke-width="2"
+              d="M12 5.365V3m0 2.365a5.338 5.338 0 0 1 5.133 5.368v1.8c0 2.386 1.867 2.982 1.867 4.175 0 .593 0 1.292-.538 1.292H5.538C5 18 5 17.301 5 16.708c0-1.193 1.867-1.789 1.867-4.175v-1.8A5.338 5.338 0 0 1 12 5.365ZM8.733 18c.094.852.306 1.54.944 2.112a3.48 3.48 0 0 0 4.646 0c.638-.572 1.236-1.26 1.33-2.112h-6.92Z"
+            />
+          </svg>
+        </button>
+        <button>Help</button>
+        <img
+          class="w-10 h-10 rounded h-auto"
+          src="https://mighty.tools/mockmind-api/content/human/76.jpg"
+          alt="Default avatar"
+        />
+      </div>
+    </div>
+    <div id="main_section">{% include 'components/dashboard.html'%}</div>
+  </div>
+</div>
+
+{% endblock %}
