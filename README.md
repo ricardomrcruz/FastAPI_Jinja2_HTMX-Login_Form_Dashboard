@@ -1,7 +1,7 @@
 
 ## FastAPI Jinja2 Templates with HTMX - Login Form & SaaS Dashboard
 
-This repo is a complement to my [Medium article](https://medium.com/@strasbourgwebsolutions/fastapi-as-a-hypermedia-driven-application-w-htmx-jinja2templates-644c3bfa51d1) where I show how I approach FastAPI Jinja2 templates as a hypermedia-driven application using HTMX and Tailwind CSS.
+This repo is a complement to my [Medium article](https://medium.com/@strasbourgwebsolutions/fastapi-as-a-hypermedia-driven-application-w-htmx-jinja2templates-644c3bfa51d1) where I document how I approach FastAPI and its template engine Jinja2 to build hypermedia-driven applications using HTMX.
 
 <br>
 
