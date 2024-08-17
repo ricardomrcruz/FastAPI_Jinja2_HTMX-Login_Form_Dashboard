@@ -3,7 +3,7 @@
 
 This repo is a complement to my [Medium article](https://medium.com/@strasbourgwebsolutions/fastapi-as-a-hypermedia-driven-application-w-htmx-jinja2templates-644c3bfa51d1) where I show how I approach FastAPI Jinja2 templates as a hypermedia-driven application using HTMX and Tailwind CSS.
 
-<br><br>
+<br>
 
 > The brilliance of HATEOAS, as implemented here with htmx, lies in the fact that we always deal with an HTML response, rather than a typical JSON API response. This concept aligns closely with the original definition of REST, as coined in Roy Fielding’s doctoral dissertation, where he emphasized that any REST response should be self-contained and where client behavior should be guided by hypermedia controls. We avoid any client-side interpretation, routing or state management of the data returned to construct the DOM, in contrast to the traditional SPA models and consequent JSON APIs that are built on this interpretation. A true server-side rendering system. This is where the meme “REST: You’ve been doing it wrong all along” comes from in terms of traditional modern web app architecture.
 
