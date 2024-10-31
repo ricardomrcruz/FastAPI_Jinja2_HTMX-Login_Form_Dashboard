@@ -9,6 +9,6 @@ This repo is a complement to my [Medium article](https://medium.com/@strasbourgw
 
 <br><br>
 
-![FastAPI-Jinja2-HTMX-Server-Architecture](https://github.com/user-attachments/assets/72f26fc0-7d0e-4f64-8f8d-ef35ad5f08fa](https://github-production-user-asset-6210df.s3.amazonaws.com/117286481/382125967-125b0dd9-5283-4294-9bca-f232abb11aeb.jpg?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Credential=AKIAVCODYLSA53PQK4ZA%2F20241031%2Fus-east-1%2Fs3%2Faws4_request&X-Amz-Date=20241031T215424Z&X-Amz-Expires=300&X-Amz-Signature=38798cc8538407a0d2eb3499bf997d9fbf8c37cd78f95ce6d0329955fecf831a&X-Amz-SignedHeaders=host)
+![fastapi-htmx-jinja2-architecture](https://github-production-user-asset-6210df.s3.amazonaws.com/117286481/382125967-125b0dd9-5283-4294-9bca-f232abb11aeb.jpg)
 
 
