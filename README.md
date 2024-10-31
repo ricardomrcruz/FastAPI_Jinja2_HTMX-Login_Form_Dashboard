@@ -9,6 +9,6 @@ This repo is a complement to my [Medium article](https://medium.com/@strasbourgw
 
 <br><br>
 
-![fastapi-htmx-jinja2-architecture](https://github-production-user-asset-6210df.s3.amazonaws.com/117286481/382125967-125b0dd9-5283-4294-9bca-f232abb11aeb.jpg)
+![fastapi-htmx-jinja2-architecture](https://github-production-user-asset-6210df.s3.amazonaws.com/117286481/382125967-125b0dd9-5283-4294-9bca-f232abb11aeb.jpg?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Credential=AKIAVCODYLSA53PQK4ZA%2F20241031%2Fus-east-1%2Fs3%2Faws4_request&X-Amz-Date=20241031T215424Z&X-Amz-Expires=300&X-Amz-Signature=38798cc8538407a0d2eb3499bf997d9fbf8c37cd78f95ce6d0329955fecf831a&X-Amz-SignedHeaders=host)
 
 
